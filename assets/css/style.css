@@ -1,0 +1,557 @@
+#header .header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-container .header-logo img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.header-container .header-search {
+    display: flex;
+    height: 48px;
+    margin-left: 16px;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px rgb(0 0 0 / 20%);
+}
+
+.header-container .header-search .header-input {
+    position: relative;
+    align-items: center;
+}
+
+.header-search .header-input input {
+    width: 215px;
+    height: 40px;
+    padding-left: 36px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.header-search .header-input .search-icon {
+    position: absolute;
+    top: 10px;
+    padding-left: 10px;
+}
+
+.header-container .header-search .header-options {
+    display: flex;
+}
+
+.header-search .header-options .calendar,
+.header-search .header-options .user {
+    position: relative;
+    padding: 0 36px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.header-search .header-options .calendar:hover,
+.header-search .header-options .user:hover,
+.header-search .header-submit {
+    cursor: pointer;
+}
+
+.header-search .header-options .calendar::before,
+.header-search .header-options .user::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 30px;
+    background: #e2dddd;
+    left: 0;
+    bottom: -5px;
+}
+
+.header-search .header-submit {
+    padding-right: 6px;
+}
+
+.header-search .header-submit .search {
+    padding: 5px 18px;
+    background-color: #555;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.header-container .header-nav {
+    flex: 1;
+}
+
+.header-container .header-nav .nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-nav .nav li {
+    list-style-type: none;
+    padding: 10px 0 10px 30px;
+    display: inline-block;
+    position: relative;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.header-nav .nav .host::after {
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: tomato;
+    content: "";
+    right: -10px;
+}
+
+.header-nav .nav .header-nav-language {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #F5F5F5;
+    padding: 4px 8px;
+}
+
+.header-nav .nav .header-nav-language:hover {
+    cursor: pointer;
+}
+
+.nav .header-nav-language img {
+    max-width: 20px;
+    height: 20px;
+}
+
+.nav .header-nav-language p {
+    padding: 0 8px;
+    font-weight: 500;
+}
+
+#slider {
+    margin-top: 50px;
+    margin-bottom: 45px;
+}
+
+#slider img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 1px 1px 4px rgb(0 0 0 / 20%);
+}
+
+#slider img:hover {
+    cursor: pointer;
+}
+
+#content .content-welcome .welcome-description {
+    margin: 12px 0;
+    line-height: 30px;
+}
+
+.content-welcome .welcome-description .sign-in,
+.content-welcome .welcome-description .sign-up {
+    color: #000;
+}
+
+.content-welcome .welcome-description .sign-in:hover,
+.content-welcome .welcome-description .sign-up:hover {
+    color: tomato;
+    transition: all 0.3s;
+}
+
+#content .content-container {
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+#content .content-container p {
+    margin-top: 12px;
+    margin-bottom: 16px;
+}
+
+#content .content-container .tours {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-container .tours a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+
+.tours a p.place {
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.tours a p.num {
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+}
+
+.content-container .tours a img {
+    max-width: 240px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.content-container .tours a img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+
+#content .content-container .discount {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-container .discount img {
+    max-width: 410px;
+    height: 180px;
+    border-radius: 5px;
+}
+
+.content-container .discount img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+#content .content-container .suggest-tours {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.content-container .suggest-tours .suggest-tour {
+    flex-basis: 25%;
+    overflow: hidden;
+    padding-right: 20px;
+}
+
+.suggest-tours .suggest-tour img {
+    max-width: 303px;
+    height: 202px;
+    border-radius: 5px;
+}
+
+.suggest-tours .suggest-tour img:hover {
+    transform: scale(0.95);
+    transition: all 0.1s;
+}
+
+.suggest-tour .suggest-item .suggest-heading {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #222;
+}
+
+.suggest-tour .suggest-item .suggest-description {
+    display: block;
+    margin: 10px 0 16px 0;
+    text-decoration: none;
+    color: #222;
+    font-size: 16px;
+}
+
+.suggest-tour .suggest-item .suggest-description:hover {
+    color: tomato;
+}
+
+#content .content-container .suggest-discoveries {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.content-container .suggest-discoveries .suggest-discovery {
+    padding-right: 20px;
+}
+
+.suggest-discoveries .suggest-discovery img {
+    min-width: 409px;
+    height: 230px;
+    border-radius: 5px;
+}
+
+.suggest-discoveries .suggest-discovery:hover img {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.suggest-discovery .suggest-item .info {
+    color: #fff;
+    position: absolute;
+    top: 30px;
+    transform: translateX(50%);
+    background: rgb(0 0 0 / 23%);
+    border-radius: 50px;
+    padding: 3px 28px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.suggest-discovery .suggest-item .suggest-des {
+    position: absolute;
+    bottom: 5px;
+    color: #fff;
+    font-size: 17px;
+    transform: translateX(10px);
+    font-weight: 500;
+}
+
+.content-container .guide {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-container .guide img {
+    max-width: 410px;
+    height: 227px;
+    border-radius: 5px;
+
+}
+
+.content-container .guide img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.download-app {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.download-app .app-introduce {
+    padding-right: 15px;
+}
+
+.app-introduce .app-logo img {
+    max-width: 343px;
+    height: 70px;
+    margin-bottom: 10px;
+    margin-left: -10px;
+}
+
+.app-introduce .app-logo img:hover {
+    cursor: pointer;
+}
+
+.app-introduce .app-content h2 {
+    text-transform: uppercase;
+    font-size: 32px;
+    color: #212529;
+}
+
+.app-introduce .app-content p {
+    font-size: 16px;
+    margin: 30px 0 16px 0;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.download-app .app-introduce .app-download {
+    display: flex;
+    margin-top: 45px;
+}
+
+.app-introduce .app-download .app-QR,
+.app-introduce .app-download .store-download {
+    padding: 0 70px;
+}
+
+.app-introduce .app-download .app-QR img:hover,
+.app-introduce .app-download .store-download img:hover {
+    cursor: pointer;
+}
+
+.app-introduce .app-download .store-download {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.app-download .app-QR img {
+    max-width: 180px;
+    height: 180px;
+    padding: 5px 5px;
+    border: 1px solid #333;
+}
+
+.app-download .store-download img {
+    max-width: 138px;
+    height: 43px;
+}
+
+
+.download-app .app-picture img {
+    max-width: 615px;
+    height: 568px;
+}
+
+#footer {
+    margin-top: 45px;
+}
+
+#footer .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.row .contact img {
+    max-width: 170px;
+    height: 35px;
+    margin-left: -5px;
+}
+
+.row .contact img:hover {
+    cursor: pointer;
+}
+
+.row .contact .messenger,
+.row .contact .call-center {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.contact .messenger .mes-icon,
+.contact .call-center .call-icon {
+    font-size: 25px;
+    padding-right: 10px;
+}
+
+.messenger .mes-info p,
+.call-center .call-info p {
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.messenger .mes-info a,
+.call-center .call-info a {
+    text-decoration: none;
+    color: #000;
+}
+
+.messenger .mes-info a:hover,
+.call-center .call-info a:hover {
+    color: tomato;
+}
+
+.row .app-download .download {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .download .app-QR img:hover, 
+.row .download .store-download img:hover {
+    cursor: pointer;
+}
+
+.row .download .app-QR img {
+    max-width: 80px;
+    height: 80px;
+}
+
+.row .download .store-download {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.row .download .store-download img {
+    padding-bottom: 10px;
+}
+
+#footer .related-info {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#footer .social-item {
+    width: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#footer .related-info .social-item {
+    padding: 0 20px;
+}
+
+
+.social-item .business-item img{
+    max-width: 100px;
+    height: 38px;
+    margin-right: 15px;
+}
+
+.social-item .social-network {
+    display: flex;
+}
+
+.social-item .social-network a {
+    position: relative;
+    text-decoration: none;
+    background-color: #333;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    padding: 0 0;
+    color: #fff;
+    border-radius: 100%;
+}
+
+.social-network a i {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+}
+
+#footer .copyright {
+    margin-top: 45px;
+    margin-bottom: 100px;
+}
+
+#footer .copyright .copyright-content {
+    text-align: center;
+    font-size: 13px;
+    color: #716F81;
+    margin-bottom: 8px;
+}
+
+#footer .copyright .copyright-author {
+    margin: 30px 0 8px 0;
+    text-align: center;
+    font-size: 13px;
+    color: #716F81;
+}
+
+.copyright .copyright-author a {
+
+    font-size: 13px;
+    color: #716F81;
+}
